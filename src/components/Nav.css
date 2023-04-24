@@ -1,0 +1,66 @@
+header {
+    position: fixed;
+    width: 100%;
+    color: white;
+    background-color: #2583fe;
+    z-index: 1;
+    min-height: 75px;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #fff;
+    margin-left: 1rem;
+  }
+  
+  .logo span {
+    color: rgb(70, 69, 69);
+    font-size: 2.5rem;
+    opacity: 0.5;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1rem 1.5rem 0.3rem;
+    cursor: pointer;
+  }
+  
+  .left-arrow {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    color: #fff;
+  }
+  
+  .search-item {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin-left: 1rem;
+    font-size: 1rem;
+  }
+  .search-holder {
+    position: relative;
+    margin-top: -10px;
+  }
+  
+  .submit-search {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    padding: 6px;
+    border: none;
+    font-size: 1rem;
+  }
+  
+  .microphone {
+    margin-right: 2rem;
+    color: #fff;
+  }
+  
+  .Info {
+    margin-top: -6rem;
+  }

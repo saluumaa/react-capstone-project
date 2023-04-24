@@ -1,4 +1,5 @@
-
+import './Navbar.css'
+import './CovidDetails.css'
 import Input from './Input';
 
 const Navbar = () => {
