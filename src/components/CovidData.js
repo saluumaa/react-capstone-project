@@ -1,10 +1,10 @@
-
 import React from 'react'
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchData, getAllData } from '../redux/covid/covidSlice';
 import {FaArrowCircleRight} from 'react-icons/fa';
+import './CovidData.css';
 
 const CovidData = () => {
   const dispatch = useDispatch();
