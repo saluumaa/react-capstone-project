@@ -1,0 +1,33 @@
+.title {
+    font-size: 1.8rem;
+    color: azure;
+    padding: 8.5rem 0 0 1rem;
+    border: 1px solid #2583fe;
+    border-radius: 15px;
+    margin: 5px;
+  }
+  
+  .details-container {
+    display: grid;
+    grid-template-columns: 100%;
+    margin: 0 auto;
+    width: 100%;
+    color: aliceblue;
+  }
+  
+  .detail-holder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #407cca;
+    border-radius: 15px;
+    padding: 25px;
+    margin: 2px;
+    border: 1px solid #2583fe;
+    font-size: 1.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .flex{
+    display: flex;
+    gap: 2rem;
+  }
