@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { FaSkull, FaHeartbeat, FaArrowCircleRight, FaHeadSideCough, FaGlobe, FaPeopleArrows, FaThermometerThreeQuarters } from 'react-icons/fa';
 import { fetchData } from '../redux/covid/covidSlice';
+import  './CovidDetails.css';
 
 const CovidDetails = () => {
     const { id } = useParams();
