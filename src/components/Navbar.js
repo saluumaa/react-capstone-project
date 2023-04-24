@@ -1,20 +1,16 @@
-import './Navbar.css'
-import './CovidDetails.css'
+import './Nav.css';
+import './CovidDetails.css';
 import Input from './Input';
 
-const Navbar = () => {
-
-
-  return (
-    <>
+const Navbar = () => (
+  <>
     <header>
-    <nav>
-    <Input />
-    </nav>
+      <nav>
+        <Input />
+      </nav>
     </header>
-    </>
+  </>
 
-  );
-};
+);
 
 export default Navbar;

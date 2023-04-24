@@ -8,24 +8,3 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: #2583fe;
 }
-
-@media screen and (max-width: 768px) {
-  .All-data {
-    padding: 10rem 0 0 0;
-    min-width: 100vw;
-  }
-  .All-data h1{
-    width: 90%;
-  }
-  .All-data .confirmed{
-    flex-direction: column;
-    padding: 0;
-    font-size: 1.5rem;
-  }
-  .data-container{
-    grid-template-columns: 50% 50%;
-  }
-  .submit-search {
-    max-height: 100%;
-  }
-}
