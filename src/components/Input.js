@@ -40,9 +40,6 @@ const Input = () => {
       setShowSearchResult(true);
       navigate(`/covid/${filtered.country}`);
       setSearch('');
-    } else {
-      alert('Country not found');
-      setSearch('');
     }
   };
 

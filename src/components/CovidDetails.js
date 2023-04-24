@@ -40,7 +40,7 @@ const CovidDetails = () => {
           </span>
           {country.continent}
           {' '}
-          and it&aposs data is as follows:
+          and it is data is as follows:
         </h2>
         <div className="details-container">
           <section className="detail-holder">
