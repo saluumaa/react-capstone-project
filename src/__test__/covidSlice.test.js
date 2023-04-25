@@ -1,12 +1,10 @@
 import { fetchData, getAllData } from '../redux/covid/covidSlice';
 
 describe('API tests', () => {
-  let data, allData, error;
+  let error;
 
   beforeAll(async () => {
     const response = await Promise.all([fetchData(), getAllData()]);
-    data = response[0].payload;
-    allData = response[1].payload;
     error = response[0].error?.message || response[1].error?.message;
   });
 

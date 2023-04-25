@@ -39,7 +39,7 @@ const CovidData = () => {
             {allData.cases}
           </p>
           <p>
-            Deaths:
+            Death(s):
             <br />
             {allData.deaths}
           </p>
