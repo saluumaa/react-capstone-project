@@ -8,18 +8,18 @@ import {
   FaHeartbeat,
   FaHeadSideCough,
   FaPeopleArrows,
-  FaThermometerThreeQuarters,
 } from 'react-icons/fa';
 import { useNavigate, Link } from 'react-router-dom';
 import { useState } from 'react';
 import { useSelector } from 'react-redux';
 
 const Input = () => {
-  const [search, setSearch] = useState('');
-  const [filteredData, setFilteredData] = useState(null);
-  const [showSearchResult, setShowSearchResult] = useState(false);
   const { data } = useSelector((state) => state.covid);
   const navigate = useNavigate();
+  const [search, setSearch] = useState('');
+  const [filteredData, setFilteredData] = useState(null);
+  const [error, setError] = useState('');
+  const [showSearchResult, setShowSearchResult] = useState(false);
 
   const searchCountry = (e) => {
     setSearch(e.target.value.toLowerCase());
@@ -41,6 +41,11 @@ const Input = () => {
       setShowSearchResult(true);
       navigate(`/covid/${filtered.country}`);
       setSearch('');
+    } else {
+      setError('Country not found');
+      setTimeout(() => {
+        setError('');
+      }, 3000);
     }
   };
 
@@ -79,6 +84,7 @@ const Input = () => {
           <RiSettings2Fill />
         </div>
       </div>
+      {error && <p className="error">{error}</p>}
       {showSearchResult && filteredData
         && (
         <section>
@@ -115,9 +121,9 @@ const Input = () => {
                 <FaPeopleArrows />
               </span>
               <p>
-                Population :
+                Cases :
                 {' '}
-                {filteredData.population}
+                {filteredData.cases}
               </p>
             </div>
             <div className="detail-holder">
@@ -130,7 +136,7 @@ const Input = () => {
                 {filteredData.active}
               </p>
             </div>
-            <div className="detail-holder">
+            {/* <div className="detail-holder">
               <span className="icon" style={icon}>
                 <FaThermometerThreeQuarters />
               </span>
@@ -139,7 +145,7 @@ const Input = () => {
                 {' '}
                 {filteredData.tests}
               </p>
-            </div>
+            </div> */}
           </div>
         </section>
         )}

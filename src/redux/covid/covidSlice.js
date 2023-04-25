@@ -14,7 +14,7 @@ export const getAllData = createAsyncThunk('covid/getAllData', async () => {
 
 const initialState = {
   data: [],
-  allData: [],
+  allData: {},
   loading: false,
   error: null,
   fetched: false,
