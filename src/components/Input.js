@@ -27,7 +27,8 @@ const Input = () => {
 
   const icon = {
     fontSize: '1.8rem',
-    color: 'red',
+    color: 'var(--dark-blue)',
+    fontWeight: 'bold',
   };
 
   const handleSubmit = (e) => {

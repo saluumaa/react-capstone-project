@@ -22,7 +22,8 @@ const CovidDetails = () => {
   const country = data.find((country) => country.countryInfo.iso2 === id);
   const icon = {
     fontSize: '1.8rem',
-    color: 'red',
+    color: 'var(--dark-blue)',
+    fontWeight: 'bold',
   };
   useEffect(() => {
     dispatch(fetchData());
@@ -85,14 +86,13 @@ const CovidDetails = () => {
                 <FaPeopleArrows />
               </span>
               <p>
-                Population#:
+                Population:
               </p>
             </div>
             <div className="flex">
               <p>
                 {country.population}
                 {' '}
-                people
               </p>
               <span><FaArrowCircleRight /></span>
             </div>

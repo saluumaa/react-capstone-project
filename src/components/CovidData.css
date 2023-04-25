@@ -12,13 +12,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #407cca;
+  font-family: var(--font-family-secondary);
+  background-color: var(--blue);
   height: 50vh;
   border-radius: 15px;
   padding: 10px;
-  margin: 5px;
+  margin: 3px;
   position: relative;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .data-wrapper img {
@@ -30,8 +31,8 @@
 
 .abs {
   position: absolute;
-  color: #fff;
-  background-color: #407cca;
+  color: var(--white);
+  background-color: var(--blue);
   padding: 5px;
   border-radius: 5px;
   right: 0.5rem;
@@ -51,7 +52,7 @@
 }
 
 .data {
-  color: #fff;
+  color: var(--white);
   font-weight: 500;
   padding-top: 5px;
   align-self: flex-end;
@@ -63,7 +64,8 @@
   margin: 0 auto;
   width: 100%;
   min-width: 100vw;
-  color: wheat;
+  font-family: var(--font-family-quaternary);
+  color: var(--light-gray);
   padding: 10rem 5rem 2rem 1rem;
   font-weight: 600;
   font-size: 1.6rem;
@@ -76,12 +78,16 @@
 .confirmed {
   display: flex;
   justify-content: space-between;
+  background-color: var(--blue);
+  border-radius: 10px;
   padding: 2rem 5rem 0 5rem;
-  font-size: 2rem;
+  font-size: 2.2rem;
+  font-weight: 700;
+  font-family: var(--font-family-four);
 }
 
 .All-data h1 {
-  padding: 1.5rem 0 1.5rem 0;
+  padding: 1.5rem 0 1.5rem 3rem;
   font-size: 3rem;
   width: 50%;
 }
@@ -94,12 +100,11 @@
 
   .All-data h1 {
     width: 90%;
-    padding: 5px 5px;
+    padding: 5px 2rem;
   }
 
   .All-data .confirmed {
-    flex-direction: column;
-    padding: 0 5px;
+    padding: 0 3rem;
     font-size: 1.5rem;
   }
 

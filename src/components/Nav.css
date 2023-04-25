@@ -1,8 +1,8 @@
 header {
   position: fixed;
   width: 100%;
-  color: white;
-  background-color: #2583fe;
+  color: var(--white);
+  background-color: var(--blue);
   z-index: 1;
   min-height: 75px;
 }
@@ -10,18 +10,20 @@ header {
 .logo {
   font-size: 1.8rem;
   font-weight: 600;
-  color: #fff;
+  color: var(--light-gray);
+  font-family: var(--font-family-quaternary);
   margin-left: 1rem;
 }
 
 .logo span {
-  color: rgb(70, 69, 69);
+  color: var(--dark-blue);
   font-size: 2.5rem;
   opacity: 0.5;
 }
 
 .navbar {
   display: flex;
+  font-family: var(--font-family-secondary);
   justify-content: space-between;
   padding: 1rem 1rem 1.5rem 0.3rem;
   cursor: pointer;
@@ -30,7 +32,7 @@ header {
 .left-arrow {
   font-size: 1.2rem;
   margin-left: 1rem;
-  color: #fff;
+  color: var(--white);
 }
 
 .search-item {
@@ -54,6 +56,7 @@ header {
   height: 100%;
   padding: 6px;
   border: none;
+  background: none;
   font-size: 1rem;
 }
 
@@ -69,7 +72,6 @@ header {
 @media screen and (max-width: 768px) {
   .navbar {
     justify-content: flex-start;
-    gap: 1.5rem;
   }
 
   .submit-search {

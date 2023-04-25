@@ -35,10 +35,12 @@ const CovidData = () => {
         <div className="confirmed">
           <p>
             Cases:
+            <br />
             {allData.cases}
           </p>
           <p>
             Deaths:
+            <br />
             {allData.deaths}
           </p>
         </div>
