@@ -88,13 +88,13 @@
 
 ## 💻 Loom Presentation Video <a name="loom-video"></a>
 
-- not available yet.
+- [Live Presentation Link](https://www.loom.com/share/6475913c54aa4fd6a6ef226c0b561d5e)
 
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- N/A yet. 
+-  [Live Demo Link](https://react-capstone-project-f7sr.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -159,7 +159,7 @@ Github Pages or Netlify or render as they are free to use.
 
 - GitHub: [@saluumaa](https://github.com/saluumaa)
 - Twitter: [@SalmaHIbrahim20](https://twitter.com/SalmaHIbrahim20)
-- LinkedIn: [@salma-ibrahim-78bb5a14a](https://www.linkedin.com/in/salma-h-ibrahim)
+- LinkedIn: [@salma-h-ibrahim](https://www.linkedin.com/in/salma-h-ibrahim/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -189,7 +189,7 @@ If you like this project rate it and give it a star.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
---> I would like to thank the Microverse team for .
+-I would like to thank the Microverse team and everyone contributed the completion of this project 🙏.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
