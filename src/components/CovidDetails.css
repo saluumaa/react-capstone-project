@@ -1,0 +1,36 @@
+.title {
+  font-size: 1.8rem;
+  color: var(--light-gray);
+  padding: 8.5rem 0 0 1rem;
+  border: 1px solid var(blue);
+  border-radius: 15px;
+  margin: 3px;
+}
+
+.details-container {
+  display: grid;
+  grid-template-columns: 100%;
+  font-family: var(--font-family-tertiary);
+  margin: 0 auto;
+  width: 100%;
+  color: var(--light-gray);
+}
+
+.detail-holder {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: var(--blue);
+  border-radius: 15px;
+  padding: 25px;
+  margin: 2px;
+  border: 1px solid var(--blue);
+  font-size: 1.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.flex {
+  display: flex;
+  gap: 2rem;
+}

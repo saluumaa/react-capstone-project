@@ -1,0 +1,114 @@
+.data-container {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+.covid-data {
+  text-decoration: none;
+}
+
+.data-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-family-secondary);
+  background-color: var(--blue);
+  height: 50vh;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 3px;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.data-wrapper img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.abs {
+  position: absolute;
+  color: var(--white);
+  background-color: var(--blue);
+  padding: 5px;
+  border-radius: 5px;
+  right: 0.5rem;
+  top: 10px;
+  font-size: 1.8rem;
+}
+
+.name {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.population {
+  font-size: 1rem;
+  font-weight: 300;
+  opacity: 0.7;
+}
+
+.data {
+  color: var(--white);
+  font-weight: 500;
+  padding-top: 5px;
+  align-self: flex-end;
+}
+
+.All-data {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+  min-width: 100vw;
+  font-family: var(--font-family-quaternary);
+  color: var(--light-gray);
+  padding: 10rem 5rem 2rem 1rem;
+  font-weight: 600;
+  font-size: 1.6rem;
+  background: url(../assets/image.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.confirmed {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--blue);
+  border-radius: 20px;
+  padding: 2rem 5rem 0 5rem;
+  font-size: 2.2rem;
+  font-weight: 700;
+  font-family: var(--font-family-four);
+}
+
+.All-data h1 {
+  padding: 1.5rem 0 1.5rem 3rem;
+  font-size: 3rem;
+  width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .All-data {
+    padding: 10rem 0 0 0;
+    min-width: 100vw;
+  }
+
+  .All-data h1 {
+    width: 90%;
+    padding: 5px 2rem;
+  }
+
+  .All-data .confirmed {
+    padding: 0 3rem;
+    font-size: 1.5rem;
+  }
+
+  .data-container {
+    grid-template-columns: 50% 50%;
+  }
+}
