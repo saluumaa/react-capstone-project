@@ -88,7 +88,7 @@
 
 ## 💻 Loom Presentation Video <a name="loom-video"></a>
 
-- [Live Presentation Link](https://www.loom.com/share/27ee19a65ff9472caf87b81ced71fcf7)
+- [Live Presentation Link](https://www.loom.com/share/d4e3a5075aea4d1aba502f45db323da5)
 
 <!-- LIVE DEMO -->
 
