@@ -1,5 +1,5 @@
 header {
-  position: sticky;
+  position: fixed;
   width: 100%;
   color: var(--white);
   background-color: var(--blue);
@@ -41,6 +41,7 @@ header {
   margin-bottom: 10px;
   font-size: 1rem;
 }
+
 .Info {
   margin-top: -7rem;
 }
@@ -50,4 +51,3 @@ header {
   font-size: 18px;
   color: #fff;
 }
-
