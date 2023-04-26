@@ -94,7 +94,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
--  [Live Demo Link](https://react-capstone-project-f7sr.onrender.com/)
+-  [N/A It will be available when approved]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
