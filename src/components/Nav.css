@@ -13,7 +13,6 @@ header {
   color: var(--light-gray);
   font-family: var(--font-family-quaternary);
   text-decoration: none;
-  flex-wrap: wrap;
 }
 
 .navbar {
@@ -32,14 +31,22 @@ header {
 }
 
 .search-item {
-  padding: 8px 15px;
-  width: 50%;
+  padding: 8px 20px;
+  width: 70%;
   border-radius: 5px;
   border: none;
   outline: none;
-  margin-left: 3rem;
-  margin-bottom: 10px;
+  margin-right: 3rem;
   font-size: 1rem;
+}
+
+.search-button {
+  background: none;
+  color: #fff;
+  font-size: 1rem;
+  padding-right: 1rem;
+  border: none;
+  outline: none;
 }
 
 .Info {
@@ -50,4 +57,8 @@ header {
   padding-right: 8px;
   font-size: 18px;
   color: #fff;
+}
+
+.settings {
+  display: flex;
 }
