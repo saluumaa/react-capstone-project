@@ -6,6 +6,7 @@ import {
   FaHeadSideCough,
   FaPeopleArrows,
   FaRegSun,
+  FaSearch,
 } from 'react-icons/fa';
 import { useNavigate, Link } from 'react-router-dom';
 import { useState } from 'react';
@@ -18,7 +19,15 @@ const Input = () => {
   const [filteredData, setFilteredData] = useState(null);
   const [error, setError] = useState('');
   const [showSearchResult, setShowSearchResult] = useState(false);
+  const [searchVisible, setSearchVisible] = useState(false);
 
+  function handleSearchClick() {
+    setSearchVisible(true);
+  }
+
+  function handleSearchBlur() {
+    setSearchVisible(false);
+  }
   const searchCountry = (e) => {
     setSearch(e.target.value.toLowerCase());
   };
@@ -61,19 +70,28 @@ const Input = () => {
           Covid-19 Tracker
         </p>
         <div className="settings">
-          <FaMicrophone className="microphone" />
-          <FaRegSun />
+          {searchVisible ? (
+            <form className="search-holder" onSubmit={handleSubmit}>
+              <input
+                type="text"
+                placeholder="search country"
+                className="search-item"
+                value={search}
+                onChange={searchCountry}
+                onBlur={handleSearchBlur}
+              />
+            </form>
+          ) : (
+            <button type="submit" className="search-button" onClick={handleSearchClick}>
+              <FaSearch />
+            </button>
+          )}
+          <div>
+            <FaMicrophone className="microphone" />
+            <FaRegSun />
+          </div>
         </div>
       </div>
-      <form className="search-holder" onSubmit={handleSubmit}>
-        <input
-          type="text"
-          placeholder="search country"
-          className="search-item"
-          value={search}
-          onChange={searchCountry}
-        />
-      </form>
       {error && <p className="error">{error}</p>}
       {showSearchResult && filteredData
         && (
