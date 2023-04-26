@@ -1,13 +1,11 @@
-import { RiSettings2Fill } from 'react-icons/ri';
 import {
   FaMicrophone,
-  FaSearch,
   FaChevronLeft,
-  FaVirus,
   FaSkull,
   FaHeartbeat,
   FaHeadSideCough,
   FaPeopleArrows,
+  FaRegSun,
 } from 'react-icons/fa';
 import { useNavigate, Link } from 'react-router-dom';
 import { useState } from 'react';
@@ -54,36 +52,28 @@ const Input = () => {
   };
 
   return (
-    <>
-      <p className="logo">
-        {' '}
-        <span><FaVirus /></span>
-        {' '}
-        Covid-19 Tracker
-      </p>
+    <div>
       <div className="navbar">
-        <section>
-          <Link to="/" className="left-arrow">
-            <FaChevronLeft onClick={handleArrowLeftClick} />
-          </Link>
-        </section>
-        <form className="search-holder" onSubmit={handleSubmit}>
-          <input
-            type="text"
-            placeholder="search country"
-            className="search-item"
-            value={search}
-            onChange={searchCountry}
-          />
-          <button type="submit" className="submit-search">
-            <FaSearch />
-          </button>
-        </form>
-        <div>
+        <Link to="/" className="left-arrow">
+          <FaChevronLeft onClick={handleArrowLeftClick} />
+        </Link>
+        <p className="logo">
+          Covid-19 Tracker
+        </p>
+        <div className="settings">
           <FaMicrophone className="microphone" />
-          <RiSettings2Fill />
+          <FaRegSun />
         </div>
       </div>
+      <form className="search-holder" onSubmit={handleSubmit}>
+        <input
+          type="text"
+          placeholder="search country"
+          className="search-item"
+          value={search}
+          onChange={searchCountry}
+        />
+      </form>
       {error && <p className="error">{error}</p>}
       {showSearchResult && filteredData
         && (
@@ -136,21 +126,10 @@ const Input = () => {
                 {filteredData.active}
               </p>
             </div>
-            {/* <div className="detail-holder">
-              <span className="icon" style={icon}>
-                <FaThermometerThreeQuarters />
-              </span>
-              <p>
-                Tests:
-                {' '}
-                {filteredData.tests}
-              </p>
-            </div> */}
           </div>
         </section>
         )}
-
-    </>
+    </div>
   );
 };
 
