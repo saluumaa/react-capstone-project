@@ -88,13 +88,13 @@
 
 ## 💻 Loom Presentation Video <a name="loom-video"></a>
 
-- [Live Presentation Link](https://www.loom.com/share/6475913c54aa4fd6a6ef226c0b561d5e)
+- [Live Presentation Link](https://www.loom.com/share/27ee19a65ff9472caf87b81ced71fcf7)
 
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
--  [N/A It will be available when approved]()
+-  [Live Demo Link](https://covid-19-eyp3.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
