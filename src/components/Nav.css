@@ -1,0 +1,64 @@
+header {
+  position: fixed;
+  width: 100%;
+  color: var(--white);
+  background-color: var(--blue);
+  z-index: 1;
+  min-height: 75px;
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--light-gray);
+  font-family: var(--font-family-quaternary);
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  font-family: var(--font-family-secondary);
+  justify-content: space-between;
+  padding: 1rem 1rem 1.5rem 0.3rem;
+  cursor: pointer;
+}
+
+.left-arrow {
+  font-size: 1.2rem;
+  margin-left: 1rem;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.search-item {
+  padding: 8px 20px;
+  width: 70%;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  margin-right: 3rem;
+  font-size: 1rem;
+}
+
+.search-button {
+  background: none;
+  color: #fff;
+  font-size: 1rem;
+  padding-right: 1rem;
+  border: none;
+  outline: none;
+}
+
+.Info {
+  margin-top: -7rem;
+}
+
+.microphone {
+  padding-right: 8px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.settings {
+  display: flex;
+}

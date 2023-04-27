@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,300;1,400&family=Poppins:wght@200&family=Roboto+Slab:wght@200;300;400&family=Roboto:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+
+:root {
+  --white: #fff;
+  --light-gray: #f2f2f2;
+  --black: #000;
+  --blue: #4369b2;
+  --light-blue: #00b4d8;
+  --font-family-primary: 'Roboto', sans-serif;
+  --font-family-secondary: 'Montserrat', sans-serif;
+  --font-family-tertiary: 'Poppins', sans-serif;
+  --font-family-quaternary: 'roboto slab', sans-serif;
+  --font-family-four: 'dancing script', sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family-primary);
+  background-color: var(--blue);
+}
