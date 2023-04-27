@@ -84,7 +84,9 @@
 
 ## 🚀 Screenshot <a name="screenshot"></a>
 
-[N/A]...
+![image](https://user-images.githubusercontent.com/114566465/234785840-493ae04d-3d0c-4191-97d7-1ea6db3df432.png)
+![image](https://user-images.githubusercontent.com/114566465/234786268-62c8cefe-ac14-4cb6-aaed-45cd0f3c38bd.png)
+
 
 ## 💻 Loom Presentation Video <a name="loom-video"></a>
 
